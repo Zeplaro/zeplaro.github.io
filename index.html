@@ -1,7 +1,115 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<link rel="shortcut icon" href="lapin_icon.png" type="image/png">
+		<title>Bienvenue, Site en construction</title>
+		<meta charset="utf-8" />
+		<style type="text/css" media="screen">
+			body {
+				background: url("images/wall.png") repeat-x center, url("images/water.png");
+				background-position: 50% 0%;
+				width: 100%;
+				height: 100%;
+			}
+			header {
+				position: absolute;
+				top: 0px;
+				left: 50%;
+				z-index:4;
+			}
+			header img {
+				position: relative;
+				left : -50%;
+			}
+			.camper {
+				position: absolute;
+				left: 50%;
+				z-index: 6;
+			}
+			.camper img {
+				position: relative;
+				left: -74px;
+				top : 112px;
+			}
+			.fire {
+				position: absolute;
+				left: 50%;
+				z-index: 8;
+			}
+			.fire img {
+				position: relative;
+				left: 32px;
+				top : 30px;
+			}
+			.sign {
+				position: absolute;
+				left:50%;
+				bottom:20%;
+				transform: translateX(-50%);
+				z-index:99;
+			}
+			.shadow	{
+				position: absolute;
+				bottom: 0%;
+				left: 50%;
+				z-index:2;
+			}
+			.shadow img	{
+				position: relative;
+				left: -48px;
+			}
+			.rive {
+				position: absolute;
+				bottom: 0px;
+				left:50%;
+				z-index:3;
+			}
+			.rive img {
+				position: relative;
+				bottom: -4px;
+				left: -50%;
+			}
+			.berge {
+				background: url("images/berge.png") repeat-x;
+				background-position: 50% 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+			}
+			.berge p {
+				width: 100%;
+				height: 50%;
+				color: #FFF;
+				opacity: 0;
+				overflow: hidden;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<div class="berge">
+			<p>
+			</p>
+		</div>
+		<header>
+			<img src="images/place.png" alt="Place">
+		</header>
+		<section class="camper">
+			<img src="images/camper.gif" alt="Camper">
+		</section>
+		<section class="fire">
+			<img src="images/fire.gif" alt="fire">
+		</section>
+		<div class="sign">
+			<img src="images/sign.png" alt="Welcome, Website under construction...">
+		</div>
+		<section class="shadow">
+			<img src="images/shadow.png" alt="shadow">
+		</section>
+		<section class="rive">
+			<img src="images/rive.png" alt="rive">
+		</section>
+   </body>
 </html>
