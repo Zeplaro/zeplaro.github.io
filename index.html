@@ -1,115 +1,86 @@
 <!DOCTYPE html>
-	<head>
-		<link rel="shortcut icon" href="lapin_icon.png" type="image/png">
-		<title>Bienvenue, Site en construction</title>
-		<meta charset="utf-8" />
-		<style type="text/css" media="screen">
-			body {
-				background: url("images/wall.png") repeat-x center, url("images/water.png");
-				background-position: 50% 0%;
-				width: 100%;
-				height: 100%;
-			}
-			header {
-				position: absolute;
-				top: 0px;
-				left: 50%;
-				z-index:4;
-			}
-			header img {
-				position: relative;
-				left : -50%;
-			}
-			.camper {
-				position: absolute;
-				left: 50%;
-				z-index: 6;
-			}
-			.camper img {
-				position: relative;
-				left: -74px;
-				top : 112px;
-			}
-			.fire {
-				position: absolute;
-				left: 50%;
-				z-index: 8;
-			}
-			.fire img {
-				position: relative;
-				left: 32px;
-				top : 30px;
-			}
-			.sign {
-				position: absolute;
-				left:50%;
-				bottom:20%;
-				transform: translateX(-50%);
-				z-index:99;
-			}
-			.shadow	{
-				position: absolute;
-				bottom: 0%;
-				left: 50%;
-				z-index:2;
-			}
-			.shadow img	{
-				position: relative;
-				left: -48px;
-			}
-			.rive {
-				position: absolute;
-				bottom: 0px;
-				left:50%;
-				z-index:3;
-			}
-			.rive img {
-				position: relative;
-				bottom: -4px;
-				left: -50%;
-			}
-			.berge {
-				background: url("images/berge.png") repeat-x;
-				background-position: 50% 100%;
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				right: 0px;
-				bottom: 0px;
-			}
-			.berge p {
-				width: 100%;
-				height: 50%;
-				color: #FFF;
-				opacity: 0;
-				overflow: hidden;
-			}
-			
-		</style>
-	</head>
-	
-	<body>
-		<div class="berge">
-			<p>
-			</p>
+<head>
+	<link rel="shortcut icon" href="lapin_icon.png" type="image/png">
+	<title>Bienvenue, Site en construction</title>
+	<meta charset="utf-8" />
+	<style type="text/css" media="screen">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #5A82CE;
+			text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* keeps the footer at the bottom of the page */
+		}
+		header {
+			background-image: url("images/mur.png");
+			background-repeat: repeat-x;
+			background-position: top;
+			position: relative;
+		}
+		.campeur {
+			position: absolute;
+			top: 120px;
+			left: 50%;
+			transform: translateX(-74px);
+		}
+		.feu {
+			position: absolute;
+			top: 38px;
+			left: 50%;
+			transform: translateX(32px);
+		}
+		.ombre{
+			background-color: #52698C;
+            position: fixed;
+			top: 0px;
+			left: 50%;
+			transform: translateX(-48px);
+			width: 272px;
+			height: 100vh;
+			z-index: -1;
+		}
+		.signe {
+			position: absolute;
+			left: 50%;
+			bottom: 20%;
+			transform: translateX(-50%);
+		}
+		footer {
+			background-image: url("images/berge.png");
+			background-repeat: repeat-x;
+			background-position: bottom;
+			display: flex;
+			justify-content: center;
+			margin-top: auto;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="camp">
+			<img src="images/camp.png" alt="camp">
 		</div>
-		<header>
-			<img src="images/place.png" alt="Place">
-		</header>
-		<section class="camper">
-			<img src="images/camper.gif" alt="Camper">
-		</section>
-		<section class="fire">
-			<img src="images/fire.gif" alt="fire">
-		</section>
-		<div class="sign">
-			<img src="images/sign.png" alt="Welcome, Website under construction...">
+		<div class="campeur">
+			<img src="images/campeur.gif" alt="campeur">
 		</div>
-		<section class="shadow">
-			<img src="images/shadow.png" alt="shadow">
-		</section>
-		<section class="rive">
-			<img src="images/rive.png" alt="rive">
-		</section>
-   </body>
+		<div class="feu">
+			<img src="images/feu.gif" alt="feu">
+		</div>			
+	</header>
+	<section>
+		<div class="ombre"></div>
+		<div class="signe">
+			<img src="images/signe.png" alt="Welcome, Website under construction...">
+		</div>
+	</section>
+	<footer>
+		<img src="images/rive.png" alt="rive">
+	</footer>
+</body>
 </html>
