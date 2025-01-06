@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/" />
-    <title>Redirecting...</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" content="0; url=/" />
+	<title>Redirecting...</title>
+	<style>
+    body {
+		margin: 0;
+		height: 100vh;
+		display: flex;
+    }
+
+    a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		color: inherit;
+    }
+    a:hover {
+		cursor: default;
+    }
+	
+	#lien {
+		text-decoration: underline;
+		color: blue;
+	}
+    #lien:hover {
+		cursor: pointer;
+		color: darkblue;
+    }
+  </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="https://www.robinlavigne.com">link</a>.</p>
+	<a href="https://www.robinlavigne.com">
+    <p>If you are not redirected automatically, follow this link : <span id="lien">robinlavigne.com</span></p>
+	</a>
 </body>
 </html>
