@@ -1,86 +1,181 @@
 <!DOCTYPE html>
 <head>
-	<link rel="shortcut icon" href="lapin_icon.png" type="image/png">
-	<title>Welcome, Site under maintenance</title>
 	<meta charset="utf-8" />
-	<style type="text/css" media="screen">
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		body {
-			background-color: #5A82CE;
-			text-align: center;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* keeps the footer at the bottom of the page */
-		}
-		header {
-			background-image: url("images/mur.png");
-			background-repeat: repeat-x;
-			background-position: top;
-			position: relative;
-		}
-		.campeur {
-			position: absolute;
-			top: 120px;
-			left: 50%;
-			transform: translateX(-74px);
-		}
-		.feu {
-			position: absolute;
-			top: 38px;
-			left: 50%;
-			transform: translateX(32px);
-		}
-		.ombre{
-			background-color: #52698C;
-            position: fixed;
-			top: 0px;
-			left: 50%;
-			transform: translateX(-48px);
-			width: 272px;
-			height: 100vh;
-			z-index: -1;
-		}
-		.signe {
-			position: absolute;
-			left: 50%;
-			bottom: 20%;
-			transform: translateX(-50%);
-		}
-		footer {
-			background-image: url("images/berge.png");
-			background-repeat: repeat-x;
-			background-position: bottom;
-			display: flex;
-			justify-content: center;
-			margin-top: auto;
-		}
-		
-	</style>
+	<link rel="shortcut icon" href="icon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Robin Lavigne</title>
+
 </head>
 
 <body>
-	<header>
-		<div class="camp">
-			<img src="images/camp.png" alt="camp">
-		</div>
-		<div class="campeur">
-			<img src="images/campeur.gif" alt="campeur">
-		</div>
-		<div class="feu">
-			<img src="images/feu.gif" alt="feu">
-		</div>			
+	<header class="dark">
+		<h1>
+			<a href="index.html">ROBIN LAVIGNE</a>
+		</h1>
+		<h3>
+			<a href="index.html">Rigging TD</a>
+		</h3>
 	</header>
-	<section>
-		<div class="ombre"></div>
-		<div class="signe">
-			<img src="images/signe.png" alt="Welcome, Website under maintenance...">
-		</div>
+	<aside>
+		<ul>
+			<li><a href="mailto:work@robinlavigne.com"><img src="images/mail.svg" title="mail" alt="mail link"/></a></li>
+			<li><a href="https://vimeo.com/robinlavigne"><img src="images/vimeo.svg" title="vimeo" alt="Vimeo link"/></a></li>
+			<li><a href="https://www.linkedin.com/in/rlavigne"><img src="images/linkedin.svg" title="LinkedIn" alt="linkedin link"/></a></li>
+			<li><a href="cv/Robin Lavigne - Rigging TD - CV 2024.pdf"><img src="images/cv.svg" title="CV" alt="CV link"/></a></li>
+		</ul>
+	</aside>
+	<section id="demo">
+		<h2>DEMOREEL - 2024</h2>
+		<iframe class="laptop" src="https://player.vimeo.com/video/459234209?color=60b67d&byline=0&portrait=0" width="1137" height="640" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<iframe class="mobile" src="https://player.vimeo.com/video/459234209?color=60b67d&byline=0&portrait=0" width="569" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</section>
+	<section id="about" class="dark">
+		<h2>ABOUT ME</h2>
+		<br>
+		<article>
+			<p>
+				I’v worked at Image Engine Studio as a Rigging TD on multiple tv-shows and films, from 2021 to 2024.<br>
+				I’ve worked at Zoic studios as a Rigging TD on multiple tv-shows and films, from 2018 to 2020.<br>
+				I’ve worked as a Character Rigger at Mikros Animation Paris, on the animation feature film ”Sherlock Gnomes”, in 2017.<br>
+				<br>
+				I had the chance to rig a lot of different creatures and human models, but more interestingly for me I also had the opportunity to do a lot of development work needed for specific creatures and shows, building specific tools and improving the rigging pipeline to fulfill the different needs of each production. I am very familiar with using Python to create new tools within Maya, using the Maya API and PySide. I also love having to learn new software, languages or processes needed to complete an asset or a production tool, as I’ve done many times during my time in the industry.<br>
+				<br>
+				I got my master degree in CG, Animation, and VFX at ESMA, Toulouse in France.<br>
+				I received a generalist formation including : modeling, sculpting, rendering, rigging, animation, and compositing.<br>
+				I've worked with a team of 5 other classmate, on our graduation short film : <a href="https://www.youtube.com/watch?v=m7nfQzZuePc">"Missing Key"</a>, on which I've done, among other things, the rigging, scripting and part of the compositing.
+			</p>
+		</article>
+	</section>
+	<section id="resume">
+		<h2>RESUME</h2>
+		<section id="cv">
+			
+			<section id="left">
+				<section id="education">
+					<h2>EDUCATION</h2>
+					<section class="dates">
+						<section class="lft">
+							<p>2012-2016</p>
+							<br>
+							<br>
+							<br>
+							<p>2011-2012<br>
+							<span class="normal">September - March</span></p>
+							<br>
+							<br>
+							<p>2011</p>
+							<br>
+							<br>
+							<p>2010</p>
+						</section>
+
+						<section class="rgt">
+							<p>Master Degree in <br>CG, Animation and VFX<br>
+							<em>ESMA, Toulouse France</em></p>
+							<br>
+							<p>International Language School<br>
+							<em>TOEFL (94/120 <span>pts</span>)</em><br>
+							<em>Vancouver BC, Canada</em></p>
+							<br>
+							<p>Applied Art Foundation course<br>
+							<em>Lyon, France</em></p>
+							<br>
+							<p>High School Diploma in Electronics<br>
+							<em>Annecy, France</em></p>
+						</section>
+					</section>
+				</section>
+				<section id="skills">
+					<h2>SKILLS</h2>
+					<section id="logos">
+						<article>
+							<img src="images/python.png"><br>
+							<p>Python</p>
+						</article>
+						<article>
+							<img src="images/maya.png"><br>
+							<p>Maya</p>
+						</article>
+						<article>
+							<img src="images/zbrush.png"><br>
+							<p>Zbrush</p>
+						</article>
+					</section>
+				</section>
+			</section>
+			<section id="right">
+				<section id="work">
+					<h2>WORK EXPERIENCES</h2>
+					<section class="dates">
+						<section class="lft">
+							<p>2021 - 2024</p>
+							<br>
+							<br>
+							<p>2020 - 2021</p>
+							<br>
+							<br>
+							<p>2018 - 2020</p>
+							<br>
+							<br>
+							<p>2017</p>
+						</section>
+
+						<section class="rgt">
+							<p>Rigging TD<br>
+							<em>Image Engine, Vancouver BC</em></p>
+							<br>
+							<p>Rigging Artist<br>
+							<em>Bardel Entertainment, Vancouver BC</em></p>
+							<br>
+							<p>Rigging TD<br>
+							<em>Zoic Studios, Vancouver BC</em></p>
+							<br>
+							<p>Character Rigging on Serlock Gnomes,<br>
+							<em>Mikros Animation, Paris</em></p>
+						</section>
+					</section>
+				</section>
+				<section id="langues">
+					<h2>LANGUAGES</h2>
+					<section id="languages">
+						<p>French : Native</p>
+						<p>English : FLuent</p>
+					</section>
+				</section>
+				<section id="interests">
+					<h2>INTERESTS</h2>
+					<section id="list">
+						<ul>
+							<li>Photography</li>
+							<li>Climbing</li>
+							<li>Hiking</li>
+						</ul>
+						<ul>
+							<li>Cinema</li>
+							<li>Skiing</li>
+							<li>Scuba Diving</li>
+						</ul>
+					</section>
+				</section>
+			</section>
+		</section>
+		<section id="cvlink">
+			<p>
+				<a href="cv/Robin Lavigne - Rigging TD - CV 2024.pdf"><img src="images/pdf icon.png" title="Download the resume" alt="Download PDF CV"/></a>
+			</p>
+		</section>
+	</section>
+	<section id="contact" class="dark">
+		<h2>CONTACT</h2>
+		<ul>
+			<li><img src="images/mail.svg" title="mail" alt="mail link"/><a href="mailto:work@robinlavigne.com">work@robinlavigne.com</a></li>
+			<li><img src="images/vimeo.svg" title="vimeo" alt="Vimeo link"/><a href="https://vimeo.com/robinlavigne">https://vimeo.com/robinlavigne</a></li>
+			<li><img src="images/linkedin.svg" title="LinkedIn" alt="linkedin link"/><a href="https://www.linkedin.com/in/rlavigne">https://www.linkedin.com/in/rlavigne</a></li>
+			<li id="tel"><span id="num">+1 236 880 3590</span></li>
+		</ul>
 	</section>
 	<footer>
-		<img src="images/rive.png" alt="rive">
+		<p>Copyright © Robin Lavigne 2024.</p>
 	</footer>
 </body>
 </html>
